@@ -12,7 +12,7 @@ module ActiveRecord
         original_affectet_rows = affected_rows
         debug exec_explain(sql: payload[:sql], binds: payload[:binds])
       ensure
-        affectet_rows = original_affectet_rows
+        affected_rows = original_affectet_rows
       end
 
       private
